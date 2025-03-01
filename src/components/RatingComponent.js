@@ -50,7 +50,7 @@ const RatingComponent = ({ resortId }) => {
         }
     };
 
-    if (loading) return <CircularProgress />;
+    if (loading) return <CircularProgress />
 
     return (<>
         <Box>
