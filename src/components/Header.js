@@ -18,7 +18,7 @@ function Header() {
         <Toolbar>
           
           <Typography variant="h6" component="div" sx={{ flexGrow: 1,cursor: "pointer" }} onClick={()=>navigate('/')}>
-            goVagamon
+           goVagamon
           </Typography>
           
 
