@@ -222,7 +222,7 @@ const ResortDetailsPage = () => {
             </Grid2>
           ))}
         </Grid2>
-      </Box>;
+      </Box>
 
       <Box>  
         <RatingComponent resortId={id}/>
