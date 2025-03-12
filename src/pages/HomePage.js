@@ -45,7 +45,7 @@ const HomePage = () => {
     
     console.log(cart)
     if(!isLoggedIn){
-      alert('Please Login for ')
+      alert('Please Login for enable this feature')
       return
     }
     if(isInCart){
@@ -82,7 +82,7 @@ const HomePage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-      <Card key={resort._id} sx={{ width: 300, position: 'relative' }} onClick={() => navigate(`/resort/${resort._id}`)}> {/* Fixed width */}
+      <Card key={resort._id} sx={{ width: 300, height: 400, position: 'relative' }} onClick={() => navigate(`/resort/${resort._id}`)}> {/* Fixed width */}
       <IconButton
         sx={{
           position: 'absolute',
@@ -105,7 +105,7 @@ const HomePage = () => {
         height="180"
         image={resort.photos[0]}
         alt={resort.name}
-        sx={{ width: '100%', objectFit: 'cover' }} // Ensure image fills the card width
+        sx={{ width: '100%',height:'50%', objectFit: 'cover' }} // Ensure image fills the card width
       />
       <CardContent>
         <Typography variant="h5" color="primary.main" sx={{ fontFamily: 'BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif', fontWeight: 'bold', textAlign:'left' }}>

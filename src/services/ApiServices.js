@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// const API_URL = "http://localhost:5000";
 const API_URL = "https://go-vagamon-backend.onrender.com";
 
 // Function to Register User
@@ -81,6 +82,10 @@ export const addResort = async (name, description, location, amenities, price, p
       throw new Error(err.response?.data?.message || 'Failed to add resort');
     }
   }
+
+  export const updateResort = async(id, updatedData) => await axios.put(`${API_URL}/api/admin/resort/${id}`, updatedData,{ withCredentials: true });
+
+export const deleteResort = async(id) => await axios.delete(`${API_URL}/api/admin/resort/${id}`,{ withCredentials: true });
 
 export const getresorts = async()=>{
   try{

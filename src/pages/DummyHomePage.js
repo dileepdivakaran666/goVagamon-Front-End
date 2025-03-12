@@ -39,7 +39,7 @@ function DummyHomePage() {
     <Typography variant="h4" sx={{ mb: 2 }}>Dummy Resorts</Typography>
       <Box sx={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: 3 }}>
         {resorts1.map((resort) => (
-          <Card key={resort.id} sx={{ maxWidth: 300, position: 'relative' }}>
+          <Card key={resort.id} sx={{ maxWidth: 300, height: 400, position: 'relative' }}>
             <IconButton
               sx={{
                 position: 'absolute',
@@ -51,7 +51,7 @@ function DummyHomePage() {
             >
               <FavoriteBorderIcon color="primary" /> {/* Cart icon */}
             </IconButton>
-            <CardMedia component="img" height="180" image={resort.image} alt={resort.name} />
+            <CardMedia component="img" sx={{ width: '100%',height:'50%', objectFit: 'cover' }} image={resort.image} alt={resort.name} />
             <CardContent>
               <Typography variant="h6">{resort.name}</Typography>
               <Typography color="text.secondary" sx={{ mt: 1 }}>

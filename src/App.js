@@ -14,6 +14,8 @@ import ResortDetailsPage from "./pages/ResortDetailsPage";
 import CartPage from "./pages/CartPage";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import ResortsListPage from "./pages/ResortsListPage";
+import EditResortPage from "./pages/EditResortPage";
 
 function App() {
 
@@ -46,6 +48,8 @@ function App() {
             >
               <Route path="users" element={<UsersPage />} />
               <Route path="add-resort" element={<AddResortPage />} />
+              <Route path="edit-resorts" element={<ResortsListPage/>}/>
+              <Route path="edit-resort/:id" element={<EditResortPage/>}/>
             </Route>
           </Routes>
         </Box>

@@ -34,12 +34,20 @@ const AdminLayout = () => {
           </ListItemIcon>
           <ListItemText primary="Users" />
         </ListItem>
+        
         <ListItem button component={Link} to="/admin/add-resort">
           <ListItemIcon>
             <AddBusinessIcon />
           </ListItemIcon>
           <ListItemText primary="Add Resort" />
         </ListItem>
+
+        <ListItem button component={Link} to="/admin/edit-resorts">
+          <ListItemIcon>
+          <AddBusinessIcon />
+          </ListItemIcon>
+          <ListItemText primary="Edit Resorts" />
+         </ListItem>
       </List>
     </div>
   );
