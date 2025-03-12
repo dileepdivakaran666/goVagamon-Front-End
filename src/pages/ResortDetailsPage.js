@@ -197,7 +197,7 @@ const ResortDetailsPage = () => {
       </Grid2>
         </CardContent>
       </Card>
-
+      {resort.videos && <>
       <Typography variant="h5" gutterBottom sx={{ mt: 3 }}>
         Videos
       </Typography>
@@ -223,6 +223,7 @@ const ResortDetailsPage = () => {
           ))}
         </Grid2>
       </Box>
+      </>}
 
       <Box>  
         <RatingComponent resortId={id}/>
