@@ -197,7 +197,7 @@ const ResortDetailsPage = () => {
       </Grid2>
         </CardContent>
       </Card>
-      {resort.videos && <>
+      {resort.videos.length > 0 && <>
       <Typography variant="h5" gutterBottom sx={{ mt: 3 }}>
         Videos
       </Typography>
